@@ -1,0 +1,54 @@
+* {
+  font-family: sans-serif;
+}
+
+.vh-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.switch {
+  width: 100px;
+  height: 50px;
+  margin: 20px 0;
+}
+
+.switch-checkbox {
+  display: none;
+}
+
+.switch-label {
+  width: 100%;
+  height: 100%;
+  background-color: #BDBDBD;
+  display: block;
+  padding: 5px;
+  border-radius: 54px;
+}
+
+.switch-toggle {
+  float: left;
+  width: 50%;
+  height: 50px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  position: relative;
+}
+
+.switch-checkbox:checked ~ .switch-label {
+  background-color: #2196F3;
+}
+
+.switch-checkbox:checked ~ .switch-label .switch-toggle {
+  float: right
+}
+
+.switch-rectangle .switch-label {
+  border-radius: 0;
+}
+
+.switch-rectangle .switch-toggle {
+  border-radius: 0;
+}
